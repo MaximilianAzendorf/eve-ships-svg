@@ -19,7 +19,7 @@ body {
 }
 
 @media only screen and (min-width: 800px) {
-    #footer, a:not(.svg) {
+    #footer {
         font-size: 9pt;
     }
 
@@ -45,16 +45,9 @@ a {
 }
 
 .hint {
-    margin-left: 5em;
-    font-size: 9pt;
+    margin-left: 0;
+    display: block;
     margin-top: 1em;
-}
-
-@media only screen and (max-width: 1300px) {
-    .hint {
-        margin-left: 0;
-        display: block;
-    }
 }
 
 a.svg {
