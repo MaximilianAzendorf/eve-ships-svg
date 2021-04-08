@@ -18,8 +18,12 @@ body {
     margin: 10px 5px;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (min-width: 800px) {
     #footer, a:not(.svg) {
+        font-size: 9pt;
+    }
+
+    a.svg {
         font-size: 9pt;
     }
 }
@@ -56,7 +60,6 @@ a {
 a.svg {
     display: inline-block;
     text-decoration: none;
-    font-size: 9pt;
     margin: 12pt;
     filter:invert(35%);
 }
