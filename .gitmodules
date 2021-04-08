@@ -1,0 +1,3 @@
+[submodule "eve-ships"]
+	path = eve-ships
+	url = git@github.com:MaximilianAzendorf/eve-ships.git
