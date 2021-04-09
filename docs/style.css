@@ -10,6 +10,11 @@ body {
     margin: 0px 20px;
 }
 
+#content:after {
+    content: "";
+    flex: auto;
+}
+
 #header, #footer, #loading {
     filter:invert(35%);
 }
@@ -18,14 +23,8 @@ body {
     margin: 10px 5px;
 }
 
-@media only screen and (min-width: 800px) {
-    #footer {
-        font-size: 9pt;
-    }
-
-    a.svg {
-        font-size: 9pt;
-    }
+#footer, a.svg {
+    font-size: 12px;
 }
 
 #loading {
@@ -53,12 +52,14 @@ a {
 a.svg {
     display: inline-block;
     text-decoration: none;
-    margin: 12pt;
+    margin: 16px;
     filter:invert(35%);
 }
 
 a.svg img {
-    width: 120px;
+    min-width: 120px;
+    max-width: 200px;
+    width: auto;
     height: 120px;
     object-fit: contain;
 }
